@@ -1,6 +1,18 @@
 # restful_apy
 RESTful API implementation written in Python, using Django as a framework and SQLite as db
 
+| CRUD operation | HTTP response |
+| ------- | ------ |
+| C_reate | POST   |
+| R_ead   | GET    |
+| U_pdate | PUT    |
+| D_elete | DELETE |
+
+C => POST
+R => GET
+U => PUT
+D => DELETE
+
 # Required dependencies:
 - python3 3.2.19
 - pip
@@ -17,6 +29,7 @@ RESTful API implementation written in Python, using Django as a framework and SQ
 7. Visit http://127.0.0.1:8000/tasks/api
 
 Sample JSON data for POST method
+```json
 {
     "title": "Title goes here",
     "description": "Description contents go here",
@@ -24,3 +37,4 @@ Sample JSON data for POST method
     "due_date": "2025-02-24",
     "status": "completed"
 }
+```
